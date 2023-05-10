@@ -6,8 +6,22 @@ dependencies:
   - anyio=3.5.0=py311haa95532_0
   - argon2-cffi=21.3.0=pyhd3eb1b0_0
   - argon2-cffi-bindings=21.2.0=py311h2bbff1b_0
+  - arrow-cpp=12.0.0=h57928b3_1_cpu
   - asttokens=2.2.1=pyhd8ed1ab_0
   - attrs=22.1.0=py311haa95532_0
+  - aws-c-auth=0.6.26=h0e8f9f7_6
+  - aws-c-cal=0.5.26=h3200b0f_0
+  - aws-c-common=0.8.17=hcfcfb64_0
+  - aws-c-compression=0.2.16=h50f2975_6
+  - aws-c-event-stream=0.2.20=h03f8742_6
+  - aws-c-http=0.7.7=h1ea9cf2_3
+  - aws-c-io=0.13.21=h09d0bb2_3
+  - aws-c-mqtt=0.8.6=h9028ce9_15
+  - aws-c-s3=0.2.8=h1059ad0_4
+  - aws-c-sdkutils=0.1.9=h50f2975_1
+  - aws-checksums=0.1.14=h50f2975_6
+  - aws-crt-cpp=0.19.9=hd59d7e4_5
+  - aws-sdk-cpp=1.10.57=h44051fd_10
   - babel=2.11.0=py311haa95532_0
   - backcall=0.2.0=pyh9f0ad1d_0
   - backports=1.0=pyhd8ed1ab_3
@@ -18,6 +32,7 @@ dependencies:
   - brotli-bin=1.0.9=hcfcfb64_8
   - brotlipy=0.7.0=py311ha68e1ae_1005
   - bzip2=1.0.8=h8ffe710_4
+  - c-ares=1.18.1=h8ffe710_0
   - ca-certificates=2023.01.10=haa95532_0
   - certifi=2022.12.7=pyhd8ed1ab_0
   - cffi=1.15.1=py311h7d9ee11_3
@@ -36,8 +51,10 @@ dependencies:
   - fonttools=4.39.3=py311ha68e1ae_0
   - freetype=2.12.1=h546665d_1
   - gettext=0.21.1=h5728263_0
+  - gflags=2.2.2=ha925a31_1004
   - glib=2.74.1=h12be248_1
   - glib-tools=2.74.1=h12be248_1
+  - glog=0.6.0=h4797de2_0
   - gst-plugins-base=1.22.0=h001b923_2
   - gstreamer=1.22.0=h6b5321d_2
   - icu=72.1=h63175ca_0
@@ -62,6 +79,8 @@ dependencies:
   - krb5=1.20.1=heb0366b_0
   - lcms2=2.15=h3e3b177_1
   - lerc=4.0.0=h63175ca_0
+  - libabseil=20230125.0=cxx17_h63175ca_1
+  - libarrow=12.0.0=h91bed3e_1_cpu
   - libblas=3.9.0=16_win64_mkl
   - libbrotlicommon=1.0.9=hcfcfb64_8
   - libbrotlidec=1.0.9=hcfcfb64_8
@@ -69,19 +88,28 @@ dependencies:
   - libcblas=3.9.0=16_win64_mkl
   - libclang=16.0.0=default_h8b4101f_1
   - libclang13=16.0.0=default_h45d3cf4_1
+  - libcrc32c=1.1.2=h0e60522_0
+  - libcurl=8.0.1=h68f0423_0
   - libdeflate=1.18=hcfcfb64_0
+  - libevent=2.1.12=hf43717d_0
   - libexpat=2.5.0=h63175ca_1
   - libffi=3.4.2=h8ffe710_5
   - libglib=2.74.1=he8f3873_1
+  - libgoogle-cloud=2.10.0=h00b2bdc_0
+  - libgrpc=1.54.1=h32da247_0
   - libhwloc=2.9.0=h51c2c0f_0
   - libiconv=1.17=h8ffe710_0
   - libjpeg-turbo=2.1.5.1=hcfcfb64_0
   - liblapack=3.9.0=16_win64_mkl
   - libogg=1.3.4=h8ffe710_1
   - libpng=1.6.39=h19919ed_0
+  - libprotobuf=3.21.12=h12be248_0
   - libsodium=1.0.18=h8d14728_1
   - libsqlite=3.40.0=hcfcfb64_0
+  - libssh2=1.10.0=h9a1e1f7_3
+  - libthrift=0.18.1=h9ce19ad_1
   - libtiff=4.5.0=h6c8260b_6
+  - libutf8proc=2.8.0=h82a8f57_0
   - libvorbis=1.3.7=h0e60522_0
   - libwebp-base=1.3.0=hcfcfb64_0
   - libxcb=1.13=hcd874cb_1004
@@ -89,6 +117,7 @@ dependencies:
   - libxslt=1.1.37=h2bbff1b_0
   - libzlib=1.2.13=hcfcfb64_4
   - lxml=4.9.2=py311h2bbff1b_0
+  - lz4-c=1.9.4=hcfcfb64_0
   - m2w64-gcc-libgfortran=5.3.0=6
   - m2w64-gcc-libs=5.3.0=7
   - m2w64-gcc-libs-core=5.3.0=7
@@ -112,10 +141,12 @@ dependencies:
   - numpy=1.24.2=py311h0b4df5a_0
   - openjpeg=2.5.0=ha2aaf27_2
   - openpyxl=3.1.1=py311ha68e1ae_0
-  - openssl=3.1.0=hcfcfb64_0
+  - openssl=3.1.0=hcfcfb64_3
+  - orc=1.8.3=hada7b9e_0
   - packaging=23.0=pyhd8ed1ab_0
   - pandas=2.0.0=py311hf63dbb6_0
   - pandocfilters=1.5.0=pyhd3eb1b0_0
+  - parquet-cpp=1.5.1=2
   - parso=0.8.3=pyhd8ed1ab_0
   - patsy=0.5.3=pyhd8ed1ab_0
   - pcre2=10.40=h17e33f8_0
@@ -132,6 +163,7 @@ dependencies:
   - pthread-stubs=0.4=hcd874cb_1001
   - pthreads-win32=2.9.1=hfa6e2cd_3
   - pure_eval=0.2.2=pyhd8ed1ab_0
+  - pyarrow=12.0.0=py311h6a6099b_1_cpu
   - pycparser=2.21=pyhd8ed1ab_0
   - pygments=2.14.0=pyhd8ed1ab_0
   - pyopenssl=23.1.1=pyhd8ed1ab_0
@@ -150,6 +182,7 @@ dependencies:
   - pywinpty=2.0.10=py311h5da7b33_0
   - pyzmq=25.0.2=py311h7b3f143_0
   - qt-main=5.15.8=h7f2b912_9
+  - re2=2023.02.02=h63175ca_0
   - requests=2.28.2=pyhd8ed1ab_1
   - scipy=1.10.1=py311h37ff6ca_0
   - seaborn=0.12.2=hd8ed1ab_0
@@ -158,6 +191,7 @@ dependencies:
   - setuptools=67.6.1=pyhd8ed1ab_0
   - sip=6.7.7=py311h12c1d0e_1
   - six=1.16.0=pyh6c4a22f_0
+  - snappy=1.1.10=hfb803bf_0
   - sniffio=1.2.0=py311haa95532_1
   - soupsieve=2.4=py311haa95532_0
   - stack_data=0.6.2=pyhd8ed1ab_0
@@ -188,5 +222,6 @@ dependencies:
   - xz=5.2.6=h8d14728_0
   - zeromq=4.3.4=h0e60522_1
   - zipp=3.15.0=pyhd8ed1ab_0
+  - zlib=1.2.13=hcfcfb64_4
   - zstd=1.5.2=h12be248_6
 prefix: C:\Users\chanyan\AppData\Local\mambaforge\envs\zeromiso
